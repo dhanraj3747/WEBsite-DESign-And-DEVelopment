@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    *,
+    *::before,
+
+    *::after
+    {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .header{
+    
+        /* border: 2px solid red;  */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 1em;
+
+    }
+    .menu{
+        /* border: 2px solid red; */
+        flex: 1rem;
+    }
+
+    .header_1{
+         /* border: 2px solid red;  */
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+         flex: 1rem;
+         justify-content: center;
+    }
+
+    .names{
+        text-decoration: none;
+    }
+    .btn{
+         /* border: 2px solid red;  */
+        gap: 1rem;
+        display: flex;
+         flex: 1rem;
+         justify-content: end;
+    }
+
+    .btn1{
+        /* border: 2px solid red; */
+        background-color: black;
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        
+    }
+
+</style>
+<body>
+    <div class="header">
+        <h1 class="menu">FIntrack</h1>
+      
+          <div class="header_1">
+        <a  class="names" href="">price</a>
+        <a  class="names"href=""> contact</a>
+        <a  class="names"href="">about us</a> 
+        
+
+
+          </div>
+    <div class="btn">
+        
+         <button class="btn1">login</button>
+        <button class="btn1">sigin</button>
+    </div>
+       
+    </div>
+</body>
+</html>

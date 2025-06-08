@@ -1,0 +1,379 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neon Glow Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: radial-gradient(ellipse at center, #4e25b9 60%, #2d13a4 100%);
+    }
+    .nav-container {
+      width: 60vw;
+      min-width: 340px;
+      margin: 20px auto;
+      background: linear-gradient(90deg, #e7dbfa 0%, #8164d6 100%);
+      border-radius: 120px;
+      box-shadow: 0 0 60px 10px #00f6ff, 0 0 200px 80px #00f6ff44;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0.8em 2em;
+      gap: 2em;
+    }
+    .nav-logo {
+      background: #fff;
+      border-radius: 80px;
+      width: 220px;
+      min-width: 150px;
+      height: 200px;
+      min-height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 32px 4px #e7faff inset;
+      margin-right: 1.2em;
+      flex-shrink: 0;
+    }
+    .nav-logo img {
+      width: 92%;
+      height: auto;
+      border-radius: 70px;
+      filter: blur(1px) brightness(1.1) drop-shadow(0 0 16px #00dbffcc);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.4em;
+      flex-wrap: wrap;
+    }
+    .nav-link {
+      display: inline-block;
+      font-size: 2em;
+      font-weight: bold;
+      font-style: italic;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      text-shadow: 0 1px 8px #00ffff, 0 0 2px #111;
+      background: linear-gradient(120deg, #fff 40%, #4e25b9 100%);
+      border-radius: 0.2em;
+      margin: 0 0.1em;
+      padding: 0.07em 0.3em;
+      box-shadow: 0 2px 18px 0 #0ff7, 0 1px 4px #4443;
+      transition: background 0.19s, color 0.19s, box-shadow 0.19s;
+      border: none;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+    }
+    .nav-link.active,
+    .nav-link:hover {
+      color: #00f6ff;
+      background: linear-gradient(120deg, #00f6ff 20%, #4e25b9 100%);
+      box-shadow: 0 1px 12px 1px #00f6ff, 0 0 10px #fff8;
+      text-shadow: 0 1px 10px #fff, 0 0 24px #00f6ff, 0 0 8px #111;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1100px) {
+      .nav-container { width: 90vw; }
+      .nav-logo { width: 140px; height: 110px; min-width: 80px; min-height: 60px; }
+      .nav-link { font-size: 1.3em; }
+    }
+    @media (max-width: 700px) {
+      .nav-container {
+        width: 98vw;
+        flex-direction: column;
+        gap: 0.8em;
+        padding: 0.7em 0.5em;
+      }
+      .nav-logo {
+        margin: 0 0 0.5em 0;
+        width: 90px; height: 48px;
+        min-width: 48px; min-height: 32px;
+      }
+      .nav-links { gap: 0.18em; }
+      .nav-link { font-size: 1em; padding: 0.05em 0.15em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-container">
+    <div class="nav-logo">
+      <img src="https://thetapacademy.com/wp-content/uploads/2021/08/footer-taplogo.png" alt="TAP Academy Logo">
+    </div>
+    <div class="nav-links">
+      <a href="#" class="nav-link active">Home</a>
+      <a href="#" class="nav-link">Courses</a>
+      <a href="#" class="nav-link">Student<br>Reviews</a>
+      <a href="#" class="nav-link">Hire From<br>Us</a>
+      <a href="#" class="nav-link">Contact<br>Us</a>
+    </div>
+  </div>
+</body>
+</html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neon Glow Navbar - No Wrap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: radial-gradient(ellipse at center, #4e25b9 60%, #2d13a4 100%);
+    }
+    .nav-container {
+      width: 60vw;
+      min-width: 340px;
+      margin: 20px auto;
+      background: linear-gradient(90deg, #e7dbfa 0%, #8164d6 100%);
+      border-radius: 120px;
+      box-shadow: 0 0 60px 10px #00f6ff, 0 0 200px 80px #00f6ff44;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 0.8em 2em;
+      gap: 2em;
+    }
+    .nav-logo {
+      background: #fff;
+      border-radius: 80px;
+      width: 220px;
+      min-width: 150px;
+      height: 200px;
+      min-height: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 32px 4px #e7faff inset;
+      margin-right: 1.2em;
+      flex-shrink: 0;
+    }
+    .nav-logo img {
+      width: 92%;
+      height: auto;
+      border-radius: 70px;
+      filter: blur(1px) brightness(1.1) drop-shadow(0 0 16px #00dbffcc);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.4em;
+      flex-wrap: nowrap;   /* <--- NO WRAP! 
+      white-space: nowrap;
+    }
+    .nav-link {
+      display: inline-block;
+      font-size: 2em;
+      font-weight: bold;
+      font-style: italic;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      text-shadow: 0 1px 8px #00ffff, 0 0 2px #111;
+      background: linear-gradient(120deg, #fff 40%, #4e25b9 100%);
+      border-radius: 0.2em;
+      margin: 0 0.1em;
+      padding: 0.07em 0.3em;
+      box-shadow: 0 2px 18px 0 #0ff7, 0 1px 4px #4443;
+      transition: background 0.19s, color 0.19s, box-shadow 0.19s;
+      border: none;
+      letter-spacing: 0.01em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav-link.active,
+    .nav-link:hover {
+      color: #00f6ff;
+      background: linear-gradient(120deg, #00f6ff 20%, #4e25b9 100%);
+      box-shadow: 0 1px 12px 1px #00f6ff, 0 0 10px #fff8;
+      text-shadow: 0 1px 10px #fff, 0 0 24px #00f6ff, 0 0 8px #111;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1100px) {
+      .nav-container { width: 90vw; }
+      .nav-logo { width: 140px; height: 110px; min-width: 80px; min-height: 60px; }
+      .nav-link { font-size: 1.3em; }
+    }
+    @media (max-width: 700px) {
+      .nav-container {
+        width: 98vw;
+        flex-direction: column;
+        gap: 0.8em;
+        padding: 0.7em 0.5em;
+      }
+      .nav-logo {
+        margin: 0 0 0.5em 0;
+        width: 90px; height: 48px;
+        min-width: 48px; min-height: 32px;
+      }
+      .nav-links {
+        gap: 0.18em;
+        justify-content: flex-start;
+        overflow-x: auto;
+        width: 100%;
+      }
+      .nav-link { font-size: 1em; padding: 0.05em 0.15em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav-container">
+    <div class="nav-logo">
+      <img src="https://thetapacademy.com/wp-content/uploads/2021/08/footer-taplogo.png" alt="TAP Academy Logo">
+    </div>
+    <div class="nav-links">
+      <a href="#" class="nav-link active">Home</a>
+      <a href="#" class="nav-link">Courses</a>
+      <a href="#" class="nav-link">Student Reviews</a>
+      <a href="#" class="nav-link">Hire From Us</a>
+      <a href="#" class="nav-link">Contact Us</a>
+    </div>
+  </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Moon Banner</title>
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background to see the banner better */
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+        /* The main container for the banner artwork */
+        .banner-container {
+            width: 800px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #48009a, #240046 85%);
+            display: inline-block; /* Essential for marquee */
+            vertical-align: middle; /* Aligns items nicely in the marquee */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* The white glow effect in the top-left corner */
+        .glow {
+            content: '';
+            position: absolute;
+            top: -120px;
+            left: -100px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 65%);
+        }
+
+        /* The faint bar at the very bottom */
+        .bottom-rail {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 25px;
+            background: #c3b8f2;
+            opacity: 0.3;
+        }
+        
+        /* A wrapper for the three-part middle band, using flexbox */
+        .band-wrapper {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 100px;
+            display: flex;
+        }
+
+        /* Left section of the band */
+        .band-left {
+            flex: 2.8; /* Relative width */
+            background: linear-gradient(to right, #f2effc, #d1c4e9);
+        }
+
+        /* Middle section of the band, containing the moon */
+        .band-middle {
+            flex: 1; /* Relative width */
+            background: linear-gradient(to bottom, #d1c4e9, #ffffff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Right section of the band */
+        .band-right {
+            flex: 3; /* Relative width */
+            background: linear-gradient(to right, #c5b9e2, #a188d3, #673ab7);
+        }
+
+        /* The SVG moon with a subtle outer glow */
+        .moon-svg {
+            width: 70px;
+            height: 70px;
+            filter: drop-shadow(0 0 3px #00ffff); /* Adds a soft glow to the stroke */
+        }
+        
+        /* An invisible element to create space between the two scrolling banners */
+        .banner-spacer {
+            width: 60px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<marquee behavior="scroll" direction="left" scrollamount="6">
+  
+  <!-- First Instance of the Banner -->
+  <div class="banner-container">
+    <div class="glow"></div>
+    <div class="bottom-rail"></div>
+    <div class="band-wrapper">
+        <div class="band-left"></div>
+        <div class="band-middle">
+            <svg class="moon-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 40 10 A 40 40 0 1 1 40 90 A 30 30 0 1 0 40 10 Z" 
+                      fill="none" 
+                      stroke="#00ffff" 
+                      stroke-width="9"
+                      stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="band-right"></div>
+    </div>
+  </div>
+
+  <div class="banner-spacer"></div>
+
+  <!-- Second Instance of the Banner -->
+  <div class="banner-container">
+    <div class="glow"></div>
+    <div class="bottom-rail"></div>
+    <div class="band-wrapper">
+        <div class="band-left"></div>
+        <div class="band-middle">
+            <svg class="moon-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M 40 10 A 40 40 0 1 1 40 90 A 30 30 0 1 0 40 10 Z" 
+                      fill="none" 
+                      stroke="#00ffff" 
+                      stroke-width="9"
+                      stroke-linecap="round"/>
+            </svg>
+        </div>
+        <div class="band-right"></div>
+    </div>
+  </div>
+
+</marquee>
+
+</body>
+</html>
