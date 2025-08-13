@@ -1,0 +1,486 @@
+
+        /* Custom CSS for Bootstrap-like effects */
+        
+        :root {
+            --primary-color: #007bff; /* Bootstrap primary blue */
+            --danger-color: #dc3545; /* Bootstrap danger red */
+            --success-color: #28a745; /* Bootstrap success green */
+            --light-bg: #f8f9fa; /* Bootstrap light background */
+            --dark-text: #343a40; /* Bootstrap dark text */
+            --border-color: #ced4da; /* Bootstrap border color */
+            --shadow-light: rgba(0, 0, 0, 0.1);
+            --shadow-medium: rgba(0, 0, 0, 0.2);
+            --shadow-intense: rgb(255, 255, 255);
+             --shadow-intense1: rgb(255, 255, 255);
+               --dark-text1: #ffffff;
+        }
+        
+
+        body {
+            font-family: 'open-sans', sans-serif;
+            background-color: #e9ecef; /* A light grey background */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align items to the start to prevent vertical centering taking too much space */
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            
+             /* background: 
+          linear-gradient(rgba(0, 70, 200, 0.93), rgba(255, 0, 179, 0.93)),
+         
+          url('https://media.istockphoto.com/id/1466890104/photo/contact-us-and-support-concept-and-digital-network-with-blue-space-background.webp?b=1&s=170667a&w=0&k=20&c=QwC6tB9L62PuahdJYOc6Ae0ciLjy1Ti5AcTrwMzBj7E=') center center/cover no-repeat; */
+        }
+        
+          /* Background Video Styling */
+        #background-video {
+            position: fixed; /* Fixed to cover the entire viewport */
+             /* background: 100% 100% no-repeat; */
+            top:50%; /* Moves the top edge to the vertical center */
+            left: 50%; /* Moves the left edge to the horizontal center */
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1; /* Place behind other content  */
+           background-size: cover; /* Ensure it covers the area */
+             object-fit: cover;  /* Ensures video fills the element, cropping if necessary */
+            background-color: #ffffff; /* Fallback background color if video fails to load */
+        } 
+    
+      
+        /* Video Overlay for Readability */
+        /* .video-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* Semi-transparent black overlay *
+            z-index: -1; /* Place behind content, but above video 
+        } */
+
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px var(--shadow-intense); /* Intense shadow for the main container */
+            width: 100%;
+            max-width: 900px;
+            transition: all 0.3s ease-in-out; /* Smooth transition for any changes */
+            z-index: 1;
+            margin-left: 9rem;
+           
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--dark-text1);
+            /* margin-bottom: 30px; */
+            /* font-weight: 700; */
+            /* text-shadow: 0 0 140px #00FFFF, 0 0 60px #00BFFF, 0 0 70px #1E90FF; */
+        
+
+            text-shadow:
+                0 0 20px #00FFFF,
+                0 0 20px #00FFFF,
+                0 0 10px #0400ff,
+                0 0 30px #1E90FF;
+                
+}
+
+
+        
+
+        .heading1{
+/*           
+              background: 
+        linear-gradient(rgba(2, 208, 254, 0.93), rgba(255, 254, 255, 0.93)),
+        url('https://media.istockphoto.com/id/1466890104/photo/contact-us-and-support-concept-and-digital-network-with-blue-space-background.webp?b=1&s=170667a&w=0&k=20&c=QwC6tB9L62PuahdJYOc6Ae0ciLjy1Ti5AcTrwMzBj7E=') 
+        center center/cover no-repeat; */
+
+
+        max-width: 11.5rem;
+        letter-spacing: 20px;
+        color: #ffffff;
+      
+     
+            /* padding: 20px; */
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4.5rem;
+               color: var(--dark-text1); 
+                  box-shadow: 0 10px 20px var(--shadow-intense1); 
+            /* margin-bottom: 20px; */
+            /* box-shadow: 0 10px 20px var(--shadow-intense);  */
+            /* Intense shadow for heading */
+        }
+
+
+
+        .heading1:hover{
+             text-shadow:
+      
+         0 80px 4px #00fff7,
+         0 18px 22px #00ffef ,
+         0 80px 4px #00fff7;
+         
+         
+          transition: transform 1s, text-shadow 0.5s;
+
+          /* background-color: #fff !important; */
+        
+        
+        transition:  text-shadow 0.5s; 
+        }
+          
+
+
+        .heading111{
+              color: #ffffff;
+               font-size: 4.5rem;
+               
+                text-shadow:
+                0 0 20px #00FFFF,
+                0 0 20px #00FFFF,
+                0 0 10px #0400ff,
+                0 0 30px #1E90FF;
+                
+                
+        }
+
+        .heading111:hover{
+             text-shadow:
+      
+         0 80px 4px #00fff7,
+         0 18px 22px #00ffef ,
+         0 8px 22px #00ffef ;
+         
+          transition: transform 1s, text-shadow 0.5s;
+
+          /* background-color: #fff !important; */
+        
+        
+        transition:  text-shadow 1s; 
+          box-shadow: 0 10px 20px var(--shadow-intense);  
+        }
+
+
+
+        .heading2{
+          max-width: 17rem;
+        letter-spacing: 60px;
+        color: #ffffff;
+          /* color: var(--dark-text);  */
+      
+            margin-left: 15rem;
+            /* padding: 20px; */
+            border-radius: 1rem;
+            text-align: center;
+            font-size: 5.5rem;
+            /* margin-bottom: 10px; */
+             box-shadow: 0 10px 20px var(--shadow-intense); 
+             box-shadow: 0 10px 30px var(--shadow-intense);
+             /* Intense shadow for heading */
+        } 
+        
+        .heading2:hover{
+
+ 
+
+        text-shadow:
+      
+         0 80px 4px #00fff7,
+         0 18px 22px #00ffef ,
+         0 8px 22px #00ffef ;
+         
+          transition: transform 1s, text-shadow 0.5s;
+
+          /* background-color: #fff !important; */
+        
+        
+        transition:  text-shadow 0.5s; 
+          box-shadow: 0 10px 20px var(--shadow-intense); 
+
+        }
+
+        .heading3{
+          max-width: 10rem;
+        /* letter-spacing: 0px; */
+        /* color: #ffffff; */
+          color: var(--dark-text1); 
+          letter-spacing:20px;
+      
+            margin-left: 45rem;
+            /* padding: 20px; */
+            border-radius: 10px;
+            text-align: center;
+            font-size: 4.5rem;
+            /* margin-bottom: 10px; */
+             box-shadow: 0 10px 20px var(--shadow-intense); 
+             /* Intense shadow for heading */
+        }
+        .heading3:hover{
+            
+        text-shadow:
+      
+         0 80px 4px #00fff7,
+         0 18px 22px #00ffef ,
+         0 8px 22px #00ffef ;
+         
+          transition: transform 1s, text-shadow 0.5s;
+
+          /* background-color: #fff !important; */
+        
+        
+        transition:  text-shadow 0.5s; 
+          box-shadow: 0 10px 20px var(--shadow-intense); 
+        }
+
+        .input-group {
+            display: flex;
+            margin-bottom: 25px;
+        }
+
+        #task-input { /* Corrected ID to match JS */
+            flex-grow: 1;
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 1.9rem;
+            outline: none;
+            transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0 2px 4px var(--shadow-light); /* Subtle shadow for input */
+        }
+
+        #task-input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Bootstrap-like focus shadow */
+        }
+
+        .btn {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.9rem;
+            font-weight: 600;
+            margin-left: 10px;
+            transition: all 0.3s ease-in-out, transform 0.2s ease-out; /* Smooth transitions for buttons */
+            box-shadow: 0 4px 8px var(--shadow-medium); /* Medium shadow for buttons */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px); /* Slight lift on hover */
+            box-shadow: 0 16px 16px var(--shadow-intense); /* More intense shadow on hover */
+        }
+
+
+        .btn:active {
+            transform: translateY(0); /* Press effect */
+            box-shadow: 0 2px 4px var(--shadow-light);
+        }
+
+        .btn::after { /* Ripple effect on click */
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.2);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease-out;
+            transform: scale(0);
+            border-radius: 50%;
+        }
+    .btn
+    
+     {
+         transition: transform 0.3s;
+      }
+      .btn:hover{
+        transform:scale(1.2);
+    }
+
+        .btn:active::after {
+            transform: scale(2);
+            opacity: 1;
+            transition: 0s; /* Instant ripple start */
+        }
+
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #ffffff;
+        }
+
+        .btn-danger {
+            background-color: var(--danger-color);
+            color: #ffffff;
+        }
+
+        .btn-success {
+            background-color: var(--success-color);
+            color: #ffffff;
+        }
+
+        #task-list { /* Corrected ID to match JS */
+            list-style: none;
+            padding: 0;
+        }
+
+        #task-list li {
+            background-color: var(--light-bg);
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.9rem;
+            color: var(--dark-text);
+            box-shadow: 0 5px 10px var(--shadow-medium); /* Medium shadow for list items */
+            transition: all 0.3s ease-in-out; /* Smooth transition for list items */
+        }
+
+        #task-list li:hover {
+            transform: translateY(-3px); /* More pronounced lift on hover for list items */
+            box-shadow: 0 30px 20px var(--shadow-intense);
+             box-shadow: 0 30px 20px var(--shadow-intense); /* Intense shadow on hover */
+        }
+
+        #task-list li.completed { /* Style for completed tasks */
+            text-decoration: line-through;
+            color: var(--success-color);
+            opacity: 0.7;
+            background-color: #e2f0d9; /* Lighter green background */
+        }
+
+        .task-buttons { /* Class name for button container within list item */
+            display: flex;
+            gap: 10px; /* Space between buttons */
+        }
+
+        /* Custom Message Box Styles */
+        .message-box-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+
+        .message-box-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .message-box {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 550px;
+            width: 90%;
+            transform: translateY(-20px);
+            transition: transform 0.3s ease-in-out;
+            font-size: 2rem;
+        }
+
+        .message-box-overlay.show .message-box {
+            transform: translateY(0);
+        }
+
+        .message-box h3 {
+            margin-top: 0;
+            color: var(--dark-text);
+        }
+
+        .message-box p {
+            margin-bottom: 20px;
+            color: #6c757d;
+        }
+
+        .message-box button {
+            background-color: var(--primary-color);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.2s ease-in-out;
+            margin-left: 1rem;
+        }
+
+        .btn-close {
+           margin-left : 82rem;
+           /* Add margin for spacing */
+        }
+        .ok-green{
+            background-color: rgb(3, 207, 3) !important;
+        }
+
+        .close-red{
+            background-color: rgb(254, 61, 61) !important;
+        }
+        .message-box button:focus {
+            outline: none;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Bootstrap-like focus shadow */
+        }
+        .message-box button:hover {
+            background-color: #007afc;
+        }
+
+            
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .input-group {
+                flex-direction: column;
+            }
+            .btn {
+                margin-left: 0;
+                margin-top: 10px;
+                width: 100%;
+            }
+            .container {
+                padding: 20px;
+            }
+            #task-list li {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .task-buttons {
+                width: 100%;
+                justify-content: flex-end; /* Align buttons to the right on small screens */
+            }
+
+            /* Responsive adjustments for Message Box */
+            .message-box {
+                padding: 20px; /* Reduced padding for smaller screens */
+                width: 45%; /* Make message box take full width on small screens */
+            }
+            .message-box button {
+                width: calc(90% - 10px); /* Make buttons take half width, accounting for margin */
+                margin: 5px; 
+                border-radius: 0.6rem;/* Adjust margin for half-width buttons */
+            }
+        }

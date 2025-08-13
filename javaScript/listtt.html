@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced To-Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+<link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    
+    
+    <!-- Overlay for readability -->
+    <!-- <div class="video-overlay"></div> -->
+
+    <div class="container">
+
+        <video autoplay loop muted playsinline id="background-video">
+        <source src="AdobeStock_1178425993_Video_4K_Preview 222222_DeWatermark (2).mp4" type="video/mp4">
+
+    </video>
+    
+    <marquee behavior="" direction="right" scrollamount="20"> <span   class="heading111">(*~*)(*~*)(*~*){*~*}(*~*)(*~*)(*~*)(*~*)~~)></span></marquee>
+    <!-- <span class="heading11"> <marquee behavior="" direction="right" scrollamount="40">>>>>>>>>>>>>>>>></marquee></span> -->
+       <em> <h1 class="heading1">Focus </h1></em>
+       
+       <em> <h1 class="heading2">Board</h1></em>
+        <em><h1 class="heading3"> List</h1> </em>
+
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="Add a new task...">
+            <button class="btn btn-primary" onclick="addTask()">Add Task</button>
+        </div>
+        <ul id="task-list">
+            <!-- Tasks will be added here -->
+        </ul>
+    </div>
+
+    <!-- Custom Message Box HTML -->
+    <div id="message-box-overlay" class="message-box-overlay">
+        <div class="message-box">
+            <h3 id="message-box-title"></h3>
+            <p id="message-box-content"></p>
+            <button id="message-box-ok-button" class="ok-green">OK</button> 
+           
+            
+                <button id="message-box-close-button"  class="close-red">CLOSE</button>
+      
+         </div>
+        
+            
+    </div>
+
+    <script src="to do .js"></script>
+      
+</body>
+</html>
